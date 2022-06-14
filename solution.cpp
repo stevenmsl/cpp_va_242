@@ -14,7 +14,13 @@ using namespace sol242;
 using namespace std;
 
 /*takeaways
-  - use hash table
+  - use a hash table
+  - scan s first to collect the frequency of each char
+  - scan t and deduct the frequency of each char
+  - if the frequency ever goes to a negative
+    - s doesn't have enough number of that char
+    - s doesn't have that char at all
+
 */
 bool Solution::isAnagram(string s, string t)
 {
